@@ -20,8 +20,22 @@
 
         <!-- Orange -->
         <a-entity position="0 0 -5">
-          <a-sphere position="0 4.2 0" radius="4.2" color="#F16745"
-                    roughness="0.8" width-segments="52" height-segments="52"></a-sphere>
+		
+		<a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="4000"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "2.0 2.0 2.0"
+		  src="HOTDOGKINDA.dae" position="0 -0.09 0" rotation="0 180 0"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
+		  
+	
+                    
           <a-image src="#shadow3" rotation="-90 0 0" scale="3 3 3"></a-image>
         </a-entity>
 
