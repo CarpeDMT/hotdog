@@ -80,20 +80,53 @@
 
         <!-- Yellow -->
         <a-entity position="3 0 1">
-          <a-sphere position="0 0.5 0" radius="0.5" color="#FFC65D"></a-sphere>
+          	<a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="4000"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "0.015 0.015 0.015"
+		  src="HOTDOGKINDA.dae" position="0 2.50 0" rotation="0 180 75"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
+		
           <a-image src="#shadow3" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
         </a-entity>
 
         <!-- Purple -->
         <a-entity position="20 0 -2">
-          <a-sphere position="0 10 0" radius="10" color="#93648D"
-                    segments-width="52" segments-height="52"></a-sphere>
+         	<a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="4000"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "4 4 4"
+		  src="HOTDOGKINDA.dae" position="0 2.50 0" rotation="0 180 50"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
           <a-image src="#shadow3" rotation="-90 0 0" scale="9 9 9"></a-image>
         </a-entity>
 
         <!-- Yellow -->
         <a-entity position="-24 0 -34">
-          <a-sphere position="0 18 0" radius="18" color="#FFC65D"></a-sphere>
+         	<a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="4000"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "3.5 3.5 3.5"
+		  src="HOTDOGKINDA.dae" position="0 2.50 0" rotation="0 180 40"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
           <a-image src="#shadow3" rotation="-90 0 0" scale="8 8 8"></a-image>
         </a-entity>
 
