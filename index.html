@@ -42,14 +42,39 @@
         <!-- Green -->
         <a-entity position="-3 0 0">
 
-          <a-sphere position="0 1.75 0" radius="1.75" color="#7BC8A4"
-                    roughness="0.2"></a-sphere>
+          <a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="3000"
+                fill="backwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "0.2 0.2 0.2"
+		  src="HOTDOGKINDA.dae" position="0 2.50 0" rotation="0 180 45"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
+		  
+                    
           <a-image src="#shadow3" rotation="-90 0 0" scale="1.75 1.75 1.75"></a-image>
         </a-entity>
 
         <!-- Blue -->
         <a-entity position="1 0 0">
-          <a-sphere position="0 1 0" radius="1" color="#4CC3D9" metalness="0.1"></a-sphere>
+          
+		  <a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="3400"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+          <a-collada-model scale= "0.1 0.1 0.1"
+		  src="HOTDOGKINDA.dae" position="0 2.50 0" rotation="0 180 79"
+		  position="0 4.2 0" color="#F16745"> 
+		  </a-collada-model>
+		  
           <a-image src="#shadow3" rotation="-90 0 0" scale="1 1 1"></a-image>
         </a-entity>
 
